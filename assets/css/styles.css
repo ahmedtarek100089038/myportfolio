@@ -525,7 +525,7 @@ img {
 }
 
 .skills__arrow {
-    margin-left: var(--mb-2);
+    margin-left:auto;
     transition: .4s;
 
 }
@@ -907,6 +907,8 @@ img {
     row-gap: 3.5rem;
     background-color: var(--first-color-second);
     padding: 2rem 0 3rem;
+    align-items: center;
+    text-align: center;
 }
 
 .footer__bg {
@@ -936,18 +938,23 @@ img {
 
 .footer__social {
     font-size: 1.25rem;
-    margin-right: var(--mb-1-5);
+    margin-right: var(--mb-0-75);
 }
 
 .footer__social:hover {
     color: var(--first-color-lighter);
 }
 
+.footer__socials{
+    align-items: center;
+    text-align: center;
+}
+
 .footer__copy {
     font-size: var(--smaller-font-size);
     text-align: center;
     color: var(--text-color-light);
-    margin-top: var(--mb-3)
+    margin-top: var(--mb-5)
 }
 
 .footer__title,

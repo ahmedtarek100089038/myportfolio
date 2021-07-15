@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
         <!--==================== DEVICON ====================-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
        
@@ -282,7 +283,7 @@
 
 
             <!--==================== QUALIFICATION ====================-->
-            <section class="qualification__section" id="qualification">
+            <section class="qualification section" id="qualification">
                 <h2 class="section__title">Qualification</h2>
                 <span class="section__subtitle">My personal journey</span>
     
@@ -460,8 +461,9 @@
                 <!--==================== SERVICES 1 ====================-->
                     <div class="services__content">
                         <div>
-                            <i class="uil uil-web-grid services__icon"></i>
-                            <h3 class="services__title">UI/UX <br> Designer</h3>
+                            <!-- <i class="uil uil-web-grid services__icon"></i> -->
+                            <i class="fa fa-paint-brush services__icon" aria-hidden="true"></i>
+                            <h3 class="services__title">UI/UX <br> Design</h3>
                         </div>
                         <span class="button button--flex button--small button--link services__button">
                             View more
@@ -496,8 +498,9 @@
                     <!--==================== SERVICES 2 ====================-->
                     <div class="services__content">
                         <div>
-                            <i class="uil uil-arrow services__icon"></i>
-                            <h3 class="services__title">Frontend/Backend <br> Developement</h3>
+                            <!-- <i class="uil uil-arrow services__icon"></i> -->
+                            <i class="fa fa-code services__icon" aria-hidden="true"></i>
+                            <h3 class="services__title">Full Stack <br> Developement</h3>
                         </div>
                         <span class="button button--flex button--small button--link services__button">
                             View more
@@ -542,7 +545,8 @@
                     <!--==================== SERVICES 3 ====================-->
                     <div class="services__content">
                         <div>
-                            <i class="uil uil-lightbulb-alt services__icon"></i>
+                            <!-- <i class="uil uil-lightbulb-alt services__icon"></i> -->
+                            <i class="fas fa-lightbulb services__icon"></i>
                             <h3 class="services__title">Product <br> Development</h3>
                         </div>
                         <span class="button button--flex button--small button--link services__button">
@@ -697,7 +701,7 @@
                         </div>
                     </div>
 
-                    <form action="#" class="contact__form grid">
+                    <form action="mail.php" method="POST" class="contact__form grid">
                         <div class="contact__inputs grid">
                             <div class="contact__content">
                                 <label for="name" class="contact__label">Name</label>
@@ -716,8 +720,8 @@
                         </div>
 
                         <div class="contact__content">
-                            <label for="message" class="contact__label">Message</label>
-                            <textarea id="" cols="0" rows="7" name="message" class="contact__input"></textarea>
+                            <label for="subject" class="contact__label">Message</label>
+                            <textarea id="" cols="0" rows="7" name="subject" class="contact__input"></textarea>
                         </div>
 
                         <div class="button-area">
@@ -744,18 +748,18 @@
                 <div class="footer__container container grid">
                     <div>
                         <h1 class="footer__title">Ahmed</h1>
-                        <span class="footer__subtitle">Full-stack developer</span>
+                        <span class="footer__subtitle">Full Stack developer</span>
                     </div>
     
                     <ul class="footer__links">
+                        <li>
+                            <a href="#skills" class="footer__link">Skills</a>
+                        </li>
                         <li>
                             <a href="#services" class="footer__link">Services</a>
                         </li>
                         <li>
                             <a href="#portfolio" class="footer__link">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#contact" class="footer__link">Contact</a>
                         </li>
                     </ul>
     
@@ -783,7 +787,7 @@
         <script src="assets/js/swiper-bundle.min.js"></script>
 
         <!--==================== Contact Me Form JS ====================-->
-        <script src="assets/js/script.js"></script>
+        <!-- <script src="assets/js/script.js"></script> -->
 
         <!--==================== MAIN JS ====================-->
         <script src="assets/js/main.js"></script>
