@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <link rel="shortcut icon" href="assets/img/logo2.png">
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
         <!--==================== DEVICON ====================-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
@@ -17,9 +19,20 @@
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
+        <!--==================== Typing Js ====================-->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    
+
         <title>Ahmed Tarek | Portfolio</title>
     </head>
     <body>
+
+        <!--==================== Preloader ====================-->
+        <div class="loader-wrapper">
+            <span class="loader"><span class="loader-inner"></span></span>
+        </div>
+
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class="nav container">
@@ -118,7 +131,8 @@
                         <div class="home__data">
                             <!-- <h1 class="home__title">Hi, I'm <span class="home__title-color">Ahmed</span></h1> -->
                             <h1 class="home__title">Hi, I'm Ahmed</h1>
-                            <h3 class="home__subtitle">Full-stack Developer</h3>
+                            <!-- <h3 class="home__subtitle ">Full-stack Developer</h3> -->
+                            <h3 class="home__subtitle">I'm a <span class="typing"></span></h3>
                             <p class="home__description">High level experience in web design and development knowledge, producing quality work.</p>
                             <a href="#contact" class="button button--flex">
                                 Contact Me <i class="uil uil-message button__icon"></i>
@@ -590,12 +604,12 @@
                     <div class="swiper-wrapper">
                         <!--==================== PORTFOLIO 1 ====================-->
                         <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/portfolio1.jpg" alt="" class="portfolio__img">
+                            <img src="assets/img/portfolio.jpg" alt="" class="portfolio__img">
 
                             <div class="portfolio_">
                                 <h3 class="portfolio__title">Modern Website</h3>
                                 <p class="portfolio__description">Website adaptable to all devices,
-                                    with ui components and animated interactions.</p>
+                                    with ui components and animated interactions.</p> 
                                 <a href="#" class="button button--flex button--small portfolio__button">
                                     Demo
                                     <i class="uil uil-arrow-right button__icon"></i>
@@ -606,7 +620,7 @@
                         <!--==================== PORTFOLIO 2 ====================-->
 
                         <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/portfolio2.jpg" alt="" class="portfolio__img">
+                            <img src="assets/img/2.jpg" alt="" class="portfolio__img">
 
                             <div class="portfolio_">
                                 <h3 class="portfolio__title">Brand design</h3>
@@ -748,7 +762,8 @@
                 <div class="footer__container container grid">
                     <div>
                         <h1 class="footer__title">Ahmed</h1>
-                        <span class="footer__subtitle">Full Stack developer</span>
+                        <!-- <h3 class="home__subtitle">I'm a <span class="typing"></span></h3> -->
+                        <span class="footer__subtitle">I'm a <span class="typing-2"></span></span>
                     </div>
     
                     <ul class="footer__links">
@@ -782,7 +797,12 @@
             </div>
         </footer>
         
-
+        <!--==================== Preloader Function ====================-->
+        <script>
+            $(window).on("load",function(){
+              $(".loader-wrapper").fadeOut("slow");
+            });
+        </script>
         <!--==================== SWIPER JS ====================-->
         <script src="assets/js/swiper-bundle.min.js"></script>
 
