@@ -183,14 +183,14 @@ themeButton.addEventListener('click', () => {
 $(document).ready(function(){
   // typing text animation script
   var typed = new Typed(".typing", {
-      strings: ["Web Developer", "Front End Developer", "Back End Developer", "Web Designer", "UI-UX Developer"],
+      strings: ["a Web Developer", "a Front End Developer", "a Back End Developer", "a Web Designer", "an UI-UX Developer"],
       typeSpeed: 100,
       backSpeed: 60,
       loop: true
   });
 
   var typed = new Typed(".typing-2", {
-      strings: ["Web Developer", "Front End Developer", "Back End Developer", "Web Designer", "UI-UX Developer"],
+      strings: ["a Web Developer", "a Front End Developer", "a Back End Developer", "a Web Designer", "an UI-UX Developer"],
       typeSpeed: 100,
       backSpeed: 60,
       loop: true

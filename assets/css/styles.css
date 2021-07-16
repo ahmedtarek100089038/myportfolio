@@ -119,7 +119,7 @@ body.dark-theme {
 .loader-wrapper {
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: var(--first-color);
@@ -127,6 +127,7 @@ body.dark-theme {
     justify-content: center;
     align-items: center;
     z-index: 999;
+    opacity: 0.9;
   }
   .loader {
     display: inline-block;
@@ -1359,3 +1360,82 @@ img {
         
     }
 }
+
+/*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+.project-details{
+    background-color: var(--body-color);
+    padding-top: 4.5rem;
+    overflow: initial;
+}
+
+#portfolio-details h2{
+    margin-bottom: var(--mb-3);
+}
+
+
+
+  /*--------------------------------------------------------------
+# Portfolio Details
+--------------------------------------------------------------*/
+.portfolio-details {
+    padding-top: 40px;
+  }
+  
+  .portfolio-details .portfolio-details-container {
+    position: relative;
+  }
+  
+  .portfolio-details .portfolio-details-carousel {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .portfolio-details .portfolio-details-carousel .owl-nav, .portfolio-details .portfolio-details-carousel .owl-dots {
+    margin-top: 5px;
+    text-align: left;
+  }
+  
+  .portfolio-details .portfolio-details-carousel .owl-dot {
+    display: inline-block;
+    margin: 0 10px 0 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ddd !important;
+  }
+  
+  .portfolio-details .portfolio-details-carousel .owl-dot.active {
+    background-color: var(--first-color) !important;
+  }
+  
+  .portfolio-details .portfolio-description {
+    padding-top: 10px;
+  }
+  
+  .portfolio-details .portfolio-description h2 {
+    width: 100%;
+    font-size: 26px;
+    font-weight: 700;
+    /* margin-bottom: 10px; */
+  }
+  
+  .portfolio-details .portfolio-description p {
+    padding: 0 0 0 0;
+    color: var(--text-color);
+    margin: 0;
+    top: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .portfolio-details .portfolio-description h2 {
+      width: 100%;
+    }
+    .portfolio-details .portfolio-info {
+      position: static;
+      margin-top: 30px;
+    }
+  }
+
+  
