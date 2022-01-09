@@ -4,6 +4,25 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
+/*==================== Preloader ====================*/
+let loader = document.querySelector(".loader-container");
+
+window.addEventListener("load", vanish);
+
+function vanish() {
+loader.classList.add("disappear");
+}
+
+// Function to remove scroll bar during preload
+$(window).on("load", function () {
+    setTimeout(function () {
+    $(".no-scroll-preload").css("overflow", "visible");
+    }, 1000);
+    $(".loader-container").fadeOut(2500);
+});
+
+
 !(function($) {
   "use strict";
 

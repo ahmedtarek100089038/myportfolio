@@ -1,3 +1,21 @@
+
+/*==================== Preloader ====================*/
+let loader = document.querySelector(".loader-container");
+
+window.addEventListener("load", vanish);
+
+function vanish() {
+loader.classList.add("disappear");
+}
+
+// Function to remove scroll bar during preload
+$(window).on("load", function () {
+    setTimeout(function () {
+    $(".no-scroll-preload").css("overflow", "visible");
+    }, 1000);
+    $(".loader-container").fadeOut(2500);
+});
+
 /*==================== MENU SHOW Y HIDDEN ====================*/
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
